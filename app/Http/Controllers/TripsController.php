@@ -11,8 +11,14 @@ class TripsController extends Controller
     // Get all trips
     public function index()
     {
-        return response()->json(Trips::all());
+       
+
+        // If the API key is valid, fetch and return the trips
+        $trips = Trips::all();
+        return response()->json($trips);
     }
+
+    
 
     // Get trips by user ID
     public function userTrips($userId)

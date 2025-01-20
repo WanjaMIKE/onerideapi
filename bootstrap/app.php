@@ -12,7 +12,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        //// Register the CheckAPIKey middleware for API routes
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

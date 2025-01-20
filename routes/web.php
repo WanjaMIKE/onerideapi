@@ -1,7 +1,9 @@
 <?php
+// routes/web.php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApiKeyController;
+use App\Http\Controllers\TripsController;
+// routes/web.php
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
