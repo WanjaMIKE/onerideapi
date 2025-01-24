@@ -14,7 +14,7 @@ class CheckAPIKey
     {
         // Check if the 'api_key' is passed in the header
         if ($request->header('api_key') !== env('API_KEY')) {
-            // If the API key is missing or invalid, return a 403 response
+            // If the API key is missing or invalid, return a 401 response
             return response()->json(['error' => 'Unauthorized'], 401);
         }
 
